@@ -1,0 +1,152 @@
+.page-header {
+  padding: 33px 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 73.5%;
+  margin: 0 auto;
+}
+
+.page-header__logo-link {
+  margin-right: 30px;
+}
+
+.page-header__logo {
+  &--mobile {
+    display: none;
+  }
+}
+
+.page-header__contacts {
+  display: flex;
+}
+
+.page-header__contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include ul-reset;
+}
+
+.page-header__contacts-item {
+  position: relative;
+
+  &--mail {
+    margin-right: 88px;
+    padding-left: 39px;
+
+    .page-header__contacts-link::before {
+      top: 4px;
+      left: 0;
+
+      background: url("../../img/svg/icon-mail.svg") no-repeat;
+
+      @include pseudo(19px, 14px);
+    }
+  }
+
+  &--phone {
+    padding-left: 34px;
+
+    .page-header__contacts-link::before {
+      top: 0;
+      left: 0;
+
+      background: url("../../img/svg/icon-phone.svg") no-repeat;
+
+      @include pseudo(18px, 18px);
+    }
+  }
+}
+
+.page-header__contacts-link {
+  color: $white;
+
+  @include font(16px, 18px);
+  @include hover;
+}
+
+.page-header__contacts-cb-btn {
+  margin-left: 50px;
+
+  @include hover;
+}
+
+@include not-desktop {
+  .page-header {
+    padding: 20px 0;
+  }
+
+  .page-header__wrapper {
+    width: 93.5%;
+  }
+
+  .page-header__contacts-item {
+    &--mail {
+      margin-right: 33px;
+      padding-left: 25px;
+
+      .page-header__contacts-link::before {
+        top: 3px;
+
+        width: 25px;
+        height: 19px;
+
+        background-size: cover;
+      }
+    }
+
+    &--phone {
+      padding-left: 24px;
+
+      .page-header__contacts-link::before {
+        width: 24px;
+        height: 24px;
+
+        background-size: cover;
+      }
+    }
+  }
+
+  .page-header__contacts-link {
+    font-size: 0;
+  }
+
+  .page-header__contacts-cb-btn {
+    display: none;
+  }
+}
+
+@include mobile-only {
+  .page-header {
+    padding: 17px 0;
+  }
+
+  .page-header__wrapper {
+    width: 90%;
+  }
+
+  .page-header__logo {
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .page-header__contacts-link {
+    @include no-hover;
+  }
+}
+
+@include desktop {
+  .page-header__wrapper {
+    min-width: 960px;
+  }
+}

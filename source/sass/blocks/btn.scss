@@ -1,0 +1,64 @@
+.btn {
+  display: inline-block;
+  min-width: 180px;
+  padding: 14px;
+
+  font-family: $roboto-condensed;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  @include font(14px, 16px, 700);
+
+  &--blue-bd {
+    color: $blue;
+
+    border-color: $blue;
+  }
+
+  &--blue-full {
+    min-width: 407px;
+    padding: 17px 28px;
+
+    background-color: $blue;
+    border: none;
+
+    @include font(16px, 19px);
+  }
+}
+
+.btn__text {
+  &--mobile {
+    display: none;
+  }
+}
+
+@include not-desktop {
+  .btn {
+    &--blue-full {
+      min-width: 379px;
+    }
+  }
+}
+
+@include mobile-only {
+  .btn {
+    &--blue-full {
+      min-width: 287px;
+    }
+  }
+
+  .btn__text {
+    &--desktop {
+      display: none;
+    }
+
+    &--mobile {
+      display: inline;
+    }
+  }
+}

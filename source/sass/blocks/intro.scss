@@ -1,3 +1,180 @@
 .intro {
   background-color: $almost-black;
+  background-image: url("../../img/bg/bg-circuit-desktop@1x.png"),
+    url("../../img/bg/bg-triangles-group-desktop@1x.png"),
+    url("../../img/bg/bg-intro-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(54.2% + 352px) 258px, 50% 50%, 0 0;
+  background-size: auto, auto, cover;
+}
+
+@include retina {
+  .intro {
+    background-image: url("../../img/bg/bg-circuit-desktop@2x.png"),
+      url("../../img/bg/bg-triangles-group-desktop@2x.png"),
+      url("../../img/bg/bg-intro-desktop@2x.png");
+    background-size: 705px 515px, cover, cover;
+  }
+}
+
+.intro__content-wrapper {
+  width: 73.5%;
+  margin: 0 auto;
+  padding: 200px 0 90px;
+}
+
+.intro__title {
+  width: 57%;
+  margin: 0;
+  margin-bottom: 32px;
+
+  font-family: $roboto-condensed;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+
+  @include font(80px, 94px, 700);
+}
+
+.intro__description {
+  position: relative;
+
+  width: 53%;
+  margin: 0;
+  margin-bottom: 42px;
+  padding-left: 94px;
+
+  color: $white;
+
+  @include font(22px, 34px);
+
+  &::before {
+    top: 17px;
+    left: 0;
+
+    background-color: $white;
+
+    @include pseudo(66px, 2px);
+  }
+}
+
+.intro__advisory-btn {
+  margin-left: 94px;
+
+  @include hover;
+}
+
+.intro__scrolldown {
+  display: block;
+  margin-top: 93px;
+
+  color: $white;
+
+  transform: rotate(180deg);
+  opacity: 0.5;
+
+  @include font(14px, 16px);
+  @include hover(1, 0.6);
+  writing-mode: vertical-lr;
+}
+
+@include not-desktop {
+  @include retina {
+    .intro {
+      background-image: url("../../img/bg/bg-circuit-tablet@2x.png"),
+        url("../../img/bg/bg-triangles-group-tablet@2x.png"),
+        url("../../img/bg/bg-intro-tablet@2x.png");
+      background-size: 260px 340px, 770px 563px, cover;
+    }
+  }
+
+  .intro {
+    background-color: $almost-black;
+    background-image: url("../../img/bg/bg-circuit-tablet@1x.png"),
+      url("../../img/bg/bg-triangles-group-tablet@1x.png"),
+      url("../../img/bg/bg-intro-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: 100% 113px, 100% 0, 0 0;
+  }
+
+  .intro__content-wrapper {
+    width: 76.4%;
+    margin: 0 auto;
+    padding: 95px 0 163px;
+  }
+
+  .intro__title {
+    width: 73%;
+    @include font(60px, 70px);
+  }
+
+  .intro__description {
+    width: 400px;
+    padding-left: 48px;
+
+    @include font(18px, 28px);
+
+    &::before {
+      top: 15px;
+
+      width: 33px;
+    }
+  }
+
+  .intro__advisory-btn {
+    margin-left: 48px;
+  }
+
+  .intro__scrolldown {
+    display: none;
+  }
+}
+
+@include mobile-only {
+  @include retina {
+    .intro {
+      background-image: url("../../img/bg/bg-circuit-mobile@2x.png"),
+        url("../../img/bg/bg-triangles-group-mobile@2x.png"),
+        url("../../img/bg/bg-intro-mobile@2x.png");
+      background-size: 294px 220px, 320px 559px, cover;
+    }
+  }
+
+  .intro {
+    background-color: $almost-black;
+    background-image: url("../../img/bg/bg-circuit-mobile@1x.png"),
+      url("../../img/bg/bg-triangles-group-mobile@1x.png"),
+      url("../../img/bg/bg-intro-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 100% 92px, 100% 0, 0 0;
+  }
+
+  .intro__content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 212px 0 70px;
+  }
+
+  .intro__title {
+    width: 80%;
+
+    @include font(40px, 47px);
+  }
+
+  .intro__description {
+    width: 80%;
+
+    @include font(16px, 25px);
+
+    &::before {
+      top: 12px;
+    }
+  }
+
+  .intro__advisory-btn {
+    display: block;
+    margin-left: 0;
+
+    @include no-hover;
+  }
 }

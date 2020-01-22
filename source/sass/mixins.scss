@@ -61,3 +61,22 @@
   position: $position;
   content: $content;
 }
+
+@mixin hover($hover: $hover, $active: $active) {
+  transition: $transition-duration $transition-type;
+
+  &:hover,
+  &:focus {
+    opacity: $hover;
+  }
+
+  &:active {
+    opacity: $active;
+  }
+}
+
+@mixin no-hover($no-hover: $no-hover) {
+  &:hover {
+    opacity: $no-hover;
+  }
+}
