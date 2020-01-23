@@ -25,10 +25,12 @@
 }
 
 .feedback-form form {
+  display: flex;
+  flex-direction: column;
+
   input,
   textarea,
   textarea + button {
-    width: 100%;
     margin-bottom: 30px;
     padding: 14px 24px;
   }
