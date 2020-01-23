@@ -79,6 +79,13 @@
 }
 
 @include not-desktop {
+  .intro {
+    background-image: url("../../img/bg/bg-circuit-tablet@1x.png"),
+      url("../../img/bg/bg-triangles-group-tablet@1x.png"),
+      url("../../img/bg/bg-intro-tablet@1x.png");
+    background-position: 100% 113px, 100% 0, 0 0;
+  }
+
   @include retina {
     .intro {
       background-image: url("../../img/bg/bg-circuit-tablet@2x.png"),
@@ -86,15 +93,6 @@
         url("../../img/bg/bg-intro-tablet@2x.png");
       background-size: 260px 340px, 770px 563px, cover;
     }
-  }
-
-  .intro {
-    background-color: $almost-black;
-    background-image: url("../../img/bg/bg-circuit-tablet@1x.png"),
-      url("../../img/bg/bg-triangles-group-tablet@1x.png"),
-      url("../../img/bg/bg-intro-tablet@1x.png");
-    background-repeat: no-repeat;
-    background-position: 100% 113px, 100% 0, 0 0;
   }
 
   .intro__content-wrapper {
@@ -105,6 +103,7 @@
 
   .intro__title {
     width: 73%;
+
     @include font(60px, 70px);
   }
 
@@ -131,6 +130,13 @@
 }
 
 @include mobile-only {
+  .intro {
+    background-image: url("../../img/bg/bg-circuit-mobile@1x.png"),
+      url("../../img/bg/bg-triangles-group-mobile@1x.png"),
+      url("../../img/bg/bg-intro-mobile@1x.png");
+    background-position: 100% 92px, 100% 0, 0 0;
+  }
+
   @include retina {
     .intro {
       background-image: url("../../img/bg/bg-circuit-mobile@2x.png"),
@@ -138,15 +144,6 @@
         url("../../img/bg/bg-intro-mobile@2x.png");
       background-size: 294px 220px, 320px 559px, cover;
     }
-  }
-
-  .intro {
-    background-color: $almost-black;
-    background-image: url("../../img/bg/bg-circuit-mobile@1x.png"),
-      url("../../img/bg/bg-triangles-group-mobile@1x.png"),
-      url("../../img/bg/bg-intro-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 100% 92px, 100% 0, 0 0;
   }
 
   .intro__content-wrapper {
