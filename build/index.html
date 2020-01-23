@@ -126,6 +126,36 @@
   <main>
   </main>
 
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+    </div>
+  </footer>
+
+  <section class="popup">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <div class="popup__content feedback-form">
+      <b class="feedback-form__lead">Закажите звонок</b>
+      <p class="feedback-form__description">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form method="POST">
+        <label class="visually-hidden" for="feedback-name">Имя</label>
+        <input id="feedback-name" type="text" name="name" placeholder="Имя" required="">
+        <label class="visually-hidden" for="feedback-phone">Телефон</label>
+        <input id="feedback-phone" type="tel" name="phone" placeholder="Телефон" required="">
+        <label class="visually-hidden" for="feedback-question">Ваш вопрос</label>
+        <textarea id="feedback-question" name="question" placeholder="Ваш вопрос" cols="30" rows="10" required=""></textarea>
+        <button type="submit">Отправить</button>
+        <div class="feedback-from__agreement">
+          <label>
+            <input class="visually-hidden" type="checkbox" name="agreement" checked="" required="">
+            <span></span>
+            Я согласен на обработку персональных данных
+          </label>
+        </div>
+      </form>
+      <button class="feedback-form__close-btn" type="button" aria-label="Закрыть окно"></button>
+    </div>
+  </section>
+
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

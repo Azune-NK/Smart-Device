@@ -1,0 +1,159 @@
+.feedback-form {
+  width: 490px;
+  padding: 33px 39px;
+
+  background-color: $blue;
+}
+
+.feedback-form__lead {
+  display: block;
+  margin-bottom: 16px;
+
+  font-family: $roboto-condensed;
+  color: $white;
+
+  @include font(28px, 39px, 400);
+}
+
+.feedback-form__description {
+  margin: 0;
+  margin-bottom: 30px;
+
+  color: $white;
+
+  @include font(16px, 22px);
+}
+
+.feedback-form form {
+  input,
+  textarea,
+  textarea + button {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 14px 24px;
+  }
+
+  input,
+  textarea {
+    color: $white;
+
+    background-color: rgba($white, 0.1);
+    border: 1px solid rgba($white, 0.1);
+    outline: 0;
+
+    @include font(16px, 22px);
+
+    &::placeholder {
+      color: $white;
+
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: rgba($white, 1);
+    }
+  }
+
+  input {
+    height: 52px;
+  }
+
+  textarea {
+    height: 104px;
+
+    resize: vertical;
+  }
+
+  textarea + button {
+    font-family: $roboto-condensed;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 5px;
+
+    @include font(14px, 16px, 700);
+    @include hover;
+  }
+}
+
+.feedback-from__agreement {
+  label {
+    position: relative;
+
+    display: block;
+    width: 355px;
+    padding-left: 48px;
+
+    color: rgba($white, 0.8);
+
+    cursor: pointer;
+
+    @include font(14px, 16px);
+    @include hover;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    border: solid 1px $white;
+  }
+
+  input:checked + span {
+    &::before {
+      top: 1px;
+      left: 4px;
+
+      border-right: solid 1px $white;
+      border-bottom: solid 1px $white;
+      transform: rotate(45deg);
+
+      @include pseudo(5px, 7px);
+    }
+  }
+
+  input:focus + span {
+    outline: thin dotted;
+  }
+}
+
+.feedback-form__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 19px;
+  height: 19px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  &::before,
+  &::after {
+    top: 9px;
+    left: -1px;
+
+    background-color: $white;
+    border-radius: 5px;
+
+    @include pseudo(23px, 1px);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
