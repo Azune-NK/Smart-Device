@@ -1,0 +1,124 @@
+.about-us {
+  position: relative;
+
+  width: 61%;
+  margin: 0 auto;
+  padding: 55px 0 96px;
+  padding-left: 180px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 18px;
+
+    font-family: $roboto-condensed;
+    color: $text-light-black;
+
+    @include font(36px, 51px, 400);
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: $text-light-black;
+
+    @include font(16px, 22px);
+  }
+
+  p+p span:first-of-type {
+    display: none;
+  }
+}
+
+.about-us::before {
+  top: 55px;
+  left: -30px;
+
+  background-image: url("../../img/bg/bg-2005-desktop@1x.png");
+  background-repeat: no-repeat;
+
+  @include pseudo(220px, 317px);
+}
+
+.about-us__btn {
+  margin-top: 20px;
+}
+
+@include retina {
+  .about-us::before {
+    background-image: url("../../img/bg/bg-2005-desktop@2x.png");
+    background-size: 220px 317px;
+  }
+}
+
+@include not-desktop {
+  .about-us {
+    width: 93.75%;
+    padding: 30px 0 75px;
+    padding-left: 190px;
+
+    h2 {
+      margin-bottom: 24px;
+
+      @include font(32px, 45px);
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    p+p span:first-of-type {
+      display: inline;
+    }
+
+
+    p+p span:last-of-type {
+      display: none;
+    }
+  }
+
+  .about-us::before {
+    top: 30px;
+    left: -25px;
+    width: 244px;
+    height: 362px;
+
+    background-image: url("../../img/bg/bg-2005-tablet@1x.png");
+  }
+
+  @include retina {
+    .about-us::before {
+      background-image: url("../../img/bg/bg-2005-tablet@2x.png");
+      background-size: 244px 362px;
+    }
+  }
+
+  .about-us__btn {
+    margin-top: 10px;
+  }
+}
+
+@include mobile-only {
+  .about-us {
+    width: 90.6%;
+    padding: 30px 0 65px;
+
+    &::before {
+      display: none;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+
+      @include font(28px, 39px);
+    }
+
+    p {
+      margin-bottom: 50px;
+    }
+
+    p + p {
+      margin-bottom: 20px;
+    }
+  }
+}

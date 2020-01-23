@@ -1,0 +1,42 @@
+.info {
+  background-color: $white;
+  background-image: url("../../img/bg/bg-triangles-separate-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@include retina {
+  .info {
+    background-image: url("../../img/bg/bg-triangles-separate-desktop@2x.png");
+    background-size: 1920px 1347px;
+  }
+}
+
+@include not-desktop {
+  .info {
+    background-image: url("../../img/bg/bg-triangles-separate-tablet@1x.png");
+    background-position: 100% 42%;
+    background-size: auto;
+  }
+
+  @include retina {
+    .info {
+      background-image: url("../../img/bg/bg-triangles-separate-tablet@2x.png");
+      background-size: 559px 873px;
+    }
+  }
+}
+
+@include mobile-only {
+  .info {
+    background-image: url("../../img/bg/bg-triangles-separate-mobile@1x.png");
+    background-position: 100% 71%;
+  }
+
+  @include retina {
+    .info {
+      background-image: url("../../img/bg/bg-triangles-separate-mobile@2x.png");
+      background-size: 320px 873px;
+    }
+  }
+}
