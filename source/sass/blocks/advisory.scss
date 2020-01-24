@@ -1,0 +1,241 @@
+.advisory {
+  padding: 96px 0 113px;
+
+  background-color: $blue;
+  background-image: url("../../img/bg/bg-paper-airplane-desktop@1x.png"),
+    url("../../img/bg/bg-triangles-form-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(28.2% - 145px) 43%, 50% 50%;
+}
+
+@include retina {
+  .advisory {
+    background-image: url("../../img/bg/bg-paper-airplane-desktop@2x.png"),
+      url("../../img/bg/bg-triangles-form-desktop@2x.png");
+    background-size: 511px 288px, 1920px 881px;
+  }
+}
+
+.advisory__wrapper {
+  width: 61%;
+  margin: 0 auto;
+}
+
+.advisory__lead {
+  display: block;
+  margin-bottom: 7px;
+
+  font-family: $roboto-condensed;
+  color: $white;
+
+  @include font(36px, 51px, 400);
+}
+
+.advisory__description {
+  margin: 0;
+  margin-bottom: 50px;
+
+  color: $white;
+
+  @include font(16px, 22px);
+}
+
+.advisory__form {
+  width: 48.72%;
+  margin-left: auto;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  input,
+  textarea,
+  textarea + button {
+    padding: 14px 16px;
+  }
+
+  input,
+  textarea {
+    color: $white;
+
+    background-color: rgba($white, 0.1);
+    border: 1px solid rgba($white, 0.1);
+    outline: 0;
+
+    @include font(16px, 22px);
+
+    &::placeholder {
+      color: $white;
+
+      opacity: 1;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: rgba($white, 1);
+    }
+  }
+
+  input {
+    width: calc(50% - 15px);
+    height: 50px;
+    margin-bottom: 40px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 154px;
+    margin-bottom: 43px;
+
+    resize: vertical;
+  }
+
+  textarea + button {
+    width: calc(50% - 15px);
+
+    font-family: $roboto-condensed;
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 5px;
+
+    @include font(14px, 16px, 700);
+    @include hover;
+  }
+}
+
+.advisory-form__agreement {
+  width: calc(50% - 15px);
+  padding-top: 9px;
+
+  label {
+    position: relative;
+
+    display: block;
+    padding-left: 32px;
+
+    color: rgba($white, 0.8);
+
+    cursor: pointer;
+
+    @include font(14px, 16px);
+    @include hover;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 15px;
+    height: 15px;
+
+    border: solid 1px $white;
+  }
+
+  input:checked + span {
+    &::before {
+      top: 1px;
+      left: 4px;
+
+      border-right: solid 1px $white;
+      border-bottom: solid 1px $white;
+      transform: rotate(45deg);
+
+      @include pseudo(5px, 7px);
+    }
+  }
+
+  input:focus + span {
+    outline: thin dotted;
+  }
+}
+
+@include not-desktop {
+  .advisory {
+    padding: 83px 0 103px;
+
+    background-image: none;
+  }
+
+  .advisory__wrapper {
+    width: 76.82%;
+  }
+
+  .advisory__form {
+    width: 100%;
+    margin-left: 0;
+
+    input {
+      height: 52px;
+      margin-bottom: 40px;
+    }
+
+    textarea {
+      height: 160px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .advisory__lead {
+    margin-bottom: 15px;
+
+    @include font(32px, 45px);
+  }
+}
+
+@include mobile-only {
+  .advisory {
+    padding: 33px 0 41px;
+  }
+
+  .advisory__wrapper {
+    width: 90.6%;
+  }
+
+  .advisory__lead {
+    @include font(29px, 39px);
+  }
+
+  .advisory__description {
+    margin-bottom: 30px;
+  }
+
+  .advisory__form {
+    form {
+      flex-direction: column;
+    }
+
+    input,
+    textarea,
+    textarea + button {
+      margin-bottom: 30px;
+    }
+
+    input,
+    textarea + button {
+      width: 100%;
+    }
+
+    textarea {
+      height: 104px;
+    }
+  }
+
+  .advisory-form__agreement {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+
+@include desktop {
+  .advisory__wrapper {
+    min-width: 960px;
+  }
+}

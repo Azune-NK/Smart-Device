@@ -216,6 +216,32 @@
         </ul>
       </div>
     </section>
+
+    <section class="advisory" id="advisory">
+      <h2 class="visually-hidden">Бесплатная консультация</h2>
+      <div class="advisory__wrapper">
+        <div class="advisory__form">
+          <b class="advisory__lead">Остались вопросы? Задайте их нам!</b>
+          <p class="advisory__description">Мы проконсультируем Вас бесплатно</p>
+          <form method="POST">
+            <label class="visually-hidden" for="advisory-name">Имя</label>
+            <input id="advisory-name" type="text" name="name" placeholder="Имя" required="">
+            <label class="visually-hidden" for="advisory-phone">Телефон</label>
+            <input id="advisory-phone" type="tel" name="phone" placeholder="Телефон" required="">
+            <label class="visually-hidden" for="advisory-question">Ваш вопрос</label>
+            <textarea id="advisory-question" name="question" placeholder="Ваш вопрос" cols="30" rows="10" required=""></textarea>
+            <button type="submit">Задать вопрос</button>
+            <div class="advisory-form__agreement">
+              <label>
+                <input class="visually-hidden" type="checkbox" name="agreement" checked="" required="">
+                <span></span>
+                Я согласен на обработку персональных данных
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
@@ -236,7 +262,7 @@
         <label class="visually-hidden" for="feedback-question">Ваш вопрос</label>
         <textarea id="feedback-question" name="question" placeholder="Ваш вопрос" cols="30" rows="10" required=""></textarea>
         <button type="submit">Отправить</button>
-        <div class="feedback-from__agreement">
+        <div class="feedback-form__agreement">
           <label>
             <input class="visually-hidden" type="checkbox" name="agreement" checked="" required="">
             <span></span>
