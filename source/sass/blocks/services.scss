@@ -1,0 +1,164 @@
+.services {
+  padding: 93px 0 97px;
+
+  background-color: $almost-black;
+}
+
+.services__wrapper {
+  width: 61%;
+  margin: 0 auto;
+}
+
+.services__description {
+  margin: 0;
+  margin-bottom: 47px;
+
+  font-family: $roboto-condensed;
+  color: $white;
+
+  @include font(36px, 51px);
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include ul-reset;
+}
+
+.services__item {
+  position: relative;
+  width: calc(33% - 20px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+
+.services__link {
+  display: block;
+  min-height: 620px;
+  padding: 53px 44px;
+
+  &::before {
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    background-color: $blue;
+
+    @include pseudo(63px, 63px);
+  }
+
+  &::after {
+    right: 27px;
+    bottom: 27px;
+    z-index: 2;
+
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+    transform: rotate(45deg);
+
+    @include pseudo(6px, 6px);
+  }
+
+  &:hover,
+  &:focus {
+    img {
+      opacity: 0.4;
+    }
+  }
+
+  &:active {
+    img {
+      opacity: 0.2;
+    }
+  }
+}
+
+.services__title {
+  position: relative;
+  z-index: 2;
+
+  width: 155px;
+  margin: 0;
+
+  font-family: $roboto-condensed;
+  color: $white;
+
+  @include font(20px, 30px, 400);
+}
+
+.services__link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  opacity: 0.2;
+
+  transition: $transition-duration $transition-type;
+}
+
+@include not-desktop {
+  .services {
+    padding: 53px 0 33px;
+  }
+
+  .services__wrapper {
+    width: 93.75%;
+  }
+
+  .services__description {
+    @include font(32px, 45px);
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .services__item {
+    margin-bottom: 45px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .services__link {
+    padding: 44px;
+    min-height: 256px;
+  }
+}
+
+@include mobile-only {
+  .services {
+    padding: 53px 0 34px;
+  }
+
+  .services__wrapper {
+    width: 91%;
+  }
+
+  .services__description {
+    margin-bottom: 37px;
+
+    @include font(28px, 39px);
+  }
+
+  .services__item {
+    margin-bottom: 30px;
+  }
+
+  .services__link {
+    padding: 23px 35px;
+  }
+}
+
+@include desktop {
+  .services__wrapper {
+    min-width: 960px;
+  }
+}

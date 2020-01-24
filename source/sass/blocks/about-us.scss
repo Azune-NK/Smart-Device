@@ -25,7 +25,7 @@
     @include font(16px, 22px);
   }
 
-  p+p span:first-of-type {
+  p + p span:first-of-type {
     display: none;
   }
 }
@@ -67,12 +67,12 @@
       margin-bottom: 25px;
     }
 
-    p+p span:first-of-type {
+    p + p span:first-of-type {
       display: inline;
     }
 
 
-    p+p span:last-of-type {
+    p + p span:last-of-type {
       display: none;
     }
   }
@@ -80,6 +80,7 @@
   .about-us::before {
     top: 30px;
     left: -25px;
+
     width: 244px;
     height: 362px;
 

@@ -1,5 +1,9 @@
 'use strict';
 
+'use strict';
+
+'use strict';
+
 var telInputs = document.querySelectorAll('input[type="tel"]');
 
 if (telInputs) {
