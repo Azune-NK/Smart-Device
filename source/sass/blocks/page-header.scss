@@ -12,9 +12,17 @@
 
 .page-header__logo-link {
   margin-right: 30px;
+
+  &[href] {
+    @include hover;
+  }
 }
 
 .page-header__logo {
+  &--desktop {
+    display: block;
+  }
+
   &--mobile {
     display: none;
   }

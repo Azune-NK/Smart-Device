@@ -9,8 +9,10 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
 
+  background-color: transparent;
   border: 1px solid $white;
   border-radius: 5px;
+  cursor: pointer;
 
   @include font(14px, 16px, 700);
 
@@ -22,8 +24,9 @@
     &:hover,
     &:focus {
       color: $white;
-      border-color: $white;
+
       background-color: $blue;
+      border-color: $white;
     }
 
     &:active {

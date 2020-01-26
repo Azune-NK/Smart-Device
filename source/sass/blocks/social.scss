@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  width: 199px;
+
+  @include ul-reset;
+}
+
+.social__item {
+  margin-right: 16px;
+
+  &:nth-child(5n) {
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+
+  @include hover;
+}
+
+.social__icon {
+  display: block;
+}

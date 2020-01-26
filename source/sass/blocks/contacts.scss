@@ -1,0 +1,44 @@
+.contacts__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: $roboto-condensed;
+  color: $almost-black;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @include font(15px, 16px, 400);
+}
+
+.contacts__accordion-btn {
+  display: none;
+}
+
+.contacts__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  p,
+  a {
+    color: $almost-black;
+
+    opacity: 0.5;
+
+    @include font(15px, 25px);
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    @include hover(1, 0.6);
+  }
+}
+
+@include mobile-only {
+  .contacts__accordion-btn {
+    display: block;
+  }
+}

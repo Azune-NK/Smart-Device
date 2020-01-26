@@ -64,11 +64,12 @@
   textarea {
     height: 104px;
 
-    resize: vertical;
+    resize: none;
   }
 
   textarea + button {
     font-family: $roboto-condensed;
+    cursor: pointer;
     text-align: center;
     color: $white;
     text-transform: uppercase;
@@ -130,6 +131,7 @@
 
 .feedback-form__close-btn {
   position: absolute;
+  cursor: pointer;
   top: 20px;
   right: 20px;
 
@@ -158,4 +160,6 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  @include hover;
 }
