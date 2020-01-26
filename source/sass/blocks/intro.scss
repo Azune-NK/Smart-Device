@@ -21,6 +21,9 @@
   width: 73.5%;
   margin: 0 auto;
   padding: 200px 0 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .intro__title {
@@ -60,13 +63,13 @@
 
 .intro__advisory-btn {
   margin-left: 94px;
+  margin-bottom: 93px;
 
   @include hover;
 }
 
 .intro__scrolldown {
   display: block;
-  margin-top: 93px;
 
   color: $white;
 
@@ -122,6 +125,7 @@
 
   .intro__advisory-btn {
     margin-left: 48px;
+    margin-bottom: 0;
   }
 
   .intro__scrolldown {
