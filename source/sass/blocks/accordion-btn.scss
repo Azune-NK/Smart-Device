@@ -43,5 +43,15 @@
         transform: rotate(0deg);
       }
     }
+
+    & + nav,
+    & + div {
+      display: none;
+    }
+
+    &--on + nav,
+    &--on + div {
+      display: flex;
+    }
   }
 }
