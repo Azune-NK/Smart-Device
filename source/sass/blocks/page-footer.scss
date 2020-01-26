@@ -90,7 +90,7 @@
   @include hover(1, 0.6);
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1600px) {
   .page-footer__contacts {
     width: 200px;
 
@@ -162,6 +162,7 @@
 
   .page-footer__logo-link {
     margin-bottom: 0;
+    margin-right: 17px;
   }
 
   .page-footer__links .page-footer__service-years {
@@ -202,7 +203,7 @@
 
   .page-footer__copyright {
     width: 100%;
-    padding: 21px 3.13% 24px;
+    padding: 24px 3.13% 24px;
   }
 
   .page-footer__copyright-statement,
@@ -234,6 +235,7 @@
 
   .page-footer__logo-link {
     margin-bottom: 26px;
+    margin-right: 0;
   }
 
   .page-footer__links .page-footer__service-years {
@@ -257,7 +259,7 @@
   .page-footer__menu-nav,
   .page-footer__contacts .contacts__content {
     width: 100%;
-    margin-top: 28px;
+    margin-top: 32px;
   }
 
   .page-footer__menu {

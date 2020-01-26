@@ -1,13 +1,13 @@
 .feedback-form {
   width: 490px;
-  padding: 33px 39px;
+  padding: 31px 39px 36px;
 
   background-color: $blue;
 }
 
 .feedback-form__lead {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 
   font-family: $roboto-condensed;
   color: $white;
@@ -16,6 +16,7 @@
 }
 
 .feedback-form__description {
+  width: 400px;
   margin: 0;
   margin-bottom: 30px;
 
@@ -31,12 +32,12 @@
   input,
   textarea,
   textarea + button {
-    margin-bottom: 30px;
     padding: 14px 24px;
   }
 
   input,
   textarea {
+    margin-bottom: 30px;
     color: $white;
 
     background-color: rgba($white, 0.1);
@@ -68,6 +69,7 @@
   }
 
   textarea + button {
+    margin-bottom: 34px;
     font-family: $roboto-condensed;
     cursor: pointer;
     text-align: center;

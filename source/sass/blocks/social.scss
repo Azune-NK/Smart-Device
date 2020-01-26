@@ -24,3 +24,15 @@
 .social__icon {
   display: block;
 }
+
+@include not-desktop {
+  .social__item {
+    &:nth-child(3n) {
+      margin: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-top: 8px;
+    }
+  }
+}

@@ -4,7 +4,7 @@
     url("../../img/bg/bg-triangles-group-desktop@1x.png"),
     url("../../img/bg/bg-intro-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: calc(54.2% + 352px) 258px, 50% 50%, 0 0;
+  background-position: calc(54.2% + 379px) 258px, 50% 50%, 0 0;
   background-size: auto, auto, cover;
 }
 
@@ -29,7 +29,7 @@
 .intro__title {
   width: 57%;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
 
   font-family: $roboto-condensed;
   color: $white;
@@ -63,7 +63,7 @@
 
 .intro__advisory-btn {
   margin-left: 94px;
-  margin-bottom: 93px;
+  margin-bottom: 96px;
 
   @include hover;
 }
@@ -101,11 +101,12 @@
   .intro__content-wrapper {
     width: 76.4%;
     margin: 0 auto;
-    padding: 95px 0 163px;
+    padding: 95px 0 164px;
   }
 
   .intro__title {
     width: 73%;
+    margin-bottom: 29px;
 
     @include font(60px, 70px);
   }
@@ -113,11 +114,12 @@
   .intro__description {
     width: 400px;
     padding-left: 48px;
+    margin-bottom: 56px;
 
     @include font(18px, 28px);
 
     &::before {
-      top: 15px;
+      top: 16px;
 
       width: 33px;
     }
@@ -146,14 +148,14 @@
       background-image: url("../../img/bg/bg-circuit-mobile@2x.png"),
         url("../../img/bg/bg-triangles-group-mobile@2x.png"),
         url("../../img/bg/bg-intro-mobile@2x.png");
-      background-size: 294px 220px, 320px 559px, cover;
+      background-size: 294px 220px, 320px 529px, cover;
     }
   }
 
   .intro__content-wrapper {
     width: 90.6%;
     margin: 0 auto;
-    padding: 212px 0 70px;
+    padding: 214px 0 71px;
   }
 
   .intro__title {
@@ -163,7 +165,8 @@
   }
 
   .intro__description {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 38px;
 
     @include font(16px, 25px);
 

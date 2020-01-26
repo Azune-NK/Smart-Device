@@ -13,4 +13,3 @@ buttons.forEach(function (btn) {
     });
   });
 });
-

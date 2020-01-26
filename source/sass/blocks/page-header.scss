@@ -93,6 +93,10 @@
     width: 93.5%;
   }
 
+  .page-header__contacts-list {
+    padding-bottom: 4px;
+  }
+
   .page-header__contacts-item {
     &--mail {
       margin-right: 33px;
@@ -136,6 +140,12 @@
 
   .page-header__wrapper {
     width: 90.6%;
+  }
+
+  .page-header__contacts-item {
+    &--mail {
+      margin-right: 25px;
+    }
   }
 
   .page-header__logo {

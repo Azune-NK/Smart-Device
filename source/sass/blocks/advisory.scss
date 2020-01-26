@@ -1,18 +1,19 @@
 .advisory {
-  padding: 96px 0 113px;
+  padding: 91px 0 113px;
 
   background-color: $blue;
   background-image: url("../../img/bg/bg-paper-airplane-desktop@1x.png"),
     url("../../img/bg/bg-triangles-form-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: calc(28.2% - 145px) 43%, 50% 50%;
+  background-position: 24.8% 42%, 100% 60%;
+  background-size: 26.8%, auto;
 }
 
 @include retina {
   .advisory {
     background-image: url("../../img/bg/bg-paper-airplane-desktop@2x.png"),
       url("../../img/bg/bg-triangles-form-desktop@2x.png");
-    background-size: 511px 288px, 1920px 881px;
+    background-size: 26.5%, 1745px 765px;
   }
 }
 
@@ -23,7 +24,7 @@
 
 .advisory__lead {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 
   font-family: $roboto-condensed;
   color: $white;
@@ -112,7 +113,8 @@
 
 .advisory-form__agreement {
   width: calc(50% - 15px);
-  padding-top: 9px;
+  padding-top: 10px;
+  padding-left: 8px;
 
   label {
     position: relative;
@@ -159,13 +161,24 @@
 
 @include not-desktop {
   .advisory {
-    padding: 83px 0 103px;
+    padding: 80px 0 103px;
+    padding-left: 5px;
 
     background-image: none;
   }
 
   .advisory__wrapper {
     width: 76.82%;
+  }
+
+  .advisory__lead {
+    margin-bottom: 15px;
+
+    @include font(32px, 45px);
+  }
+
+  .advisory__description {
+    margin-bottom: 52px;
   }
 
   .advisory__form {
@@ -179,20 +192,18 @@
 
     textarea {
       height: 160px;
-      margin-bottom: 45px;
+      margin-bottom: 48px;
     }
   }
 
-  .advisory__lead {
-    margin-bottom: 15px;
-
-    @include font(32px, 45px);
+  .advisory-form__agreement {
+    padding-left: 10px;
   }
 }
 
 @include mobile-only {
   .advisory {
-    padding: 33px 0 41px;
+    padding: 32px 0 41px;
   }
 
   .advisory__wrapper {
@@ -200,11 +211,13 @@
   }
 
   .advisory__lead {
-    @include font(29px, 39px);
+    margin-bottom: 14px;
+
+    @include font(28px, 39px);
   }
 
   .advisory__description {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   .advisory__form {
@@ -230,7 +243,8 @@
 
   .advisory-form__agreement {
     width: 100%;
-    padding-top: 0;
+    padding-top: 2px;
+    padding-left: 2px;
   }
 }
 

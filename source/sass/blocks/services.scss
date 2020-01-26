@@ -1,5 +1,5 @@
 .services {
-  padding: 93px 0 97px;
+  padding: 90px 0 98px;
 
   background-color: $almost-black;
 }
@@ -11,7 +11,7 @@
 
 .services__description {
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 50px;
 
   font-family: $roboto-condensed;
   color: $white;
@@ -28,7 +28,7 @@
 
 .services__item {
   position: relative;
-  width: calc(33% - 20px);
+  width: calc(33.3% - 20px);
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -106,7 +106,7 @@
 
 @include not-desktop {
   .services {
-    padding: 53px 0 33px;
+    padding: 52px 0 33px;
   }
 
   .services__wrapper {
@@ -129,13 +129,14 @@
 
   .services__link {
     padding: 44px;
+    padding-top: 39px;
     min-height: 256px;
   }
 }
 
 @include mobile-only {
   .services {
-    padding: 53px 0 34px;
+    padding: 49px 0 34px;
   }
 
   .services__wrapper {
@@ -143,7 +144,8 @@
   }
 
   .services__description {
-    margin-bottom: 37px;
+    margin-bottom: 41px;
+    padding-left: 8px;
 
     @include font(28px, 39px);
   }
@@ -153,7 +155,7 @@
   }
 
   .services__link {
-    padding: 23px 35px;
+    padding: 22px 35px;
   }
 }
 
