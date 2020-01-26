@@ -147,10 +147,6 @@
       display: block;
     }
   }
-
-  .page-header__contacts-link {
-    @include no-hover;
-  }
 }
 
 @include desktop {

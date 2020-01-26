@@ -62,21 +62,20 @@
   content: $content;
 }
 
-@mixin hover($hover: $hover, $active: $active) {
+@mixin hover($hover: $opacity-hover, $active: $opacity-active) {
   transition: $transition-duration $transition-type;
 
-  &:hover,
+  @media (min-width: $tablet-width) {
+    &:hover {
+      opacity: $hover;
+    }
+  }
+
   &:focus {
     opacity: $hover;
   }
 
   &:active {
     opacity: $active;
-  }
-}
-
-@mixin no-hover($no-hover: $no-hover) {
-  &:hover {
-    opacity: $no-hover;
   }
 }
