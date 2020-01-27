@@ -14,7 +14,6 @@ buttons.forEach(function (btn) {
   });
 });
 
-
 'use strict';
 
 var ESC_KEYCODE = 27;
@@ -62,15 +61,15 @@ if (link && popup) {
   }
 
   var checkLocalStorage = function () {
-    if (feedbackName) {
+    if (feedbackName && storage.feedbackName !== null) {
       feedbackName.value = storage.feedbackName;
     }
 
-    if (phone && storage.phone) {
+    if (phone && storage.phone !== null) {
       phone.value = storage.phone;
     }
 
-    if (question) {
+    if (question && storage.question !== null) {
       question.value = storage.question;
     }
   };
