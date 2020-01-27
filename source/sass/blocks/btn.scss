@@ -21,7 +21,17 @@
 
     border-color: $blue;
 
-    &:hover,
+    transition: $transition-duration $transition-type;
+
+    @media (min-width: $tablet-width) {
+      &:hover {
+        color: $white;
+
+        background-color: $blue;
+        border-color: $white;
+      }
+    }
+
     &:focus {
       color: $white;
 

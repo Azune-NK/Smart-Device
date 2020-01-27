@@ -64,7 +64,14 @@
     @include pseudo(6px, 6px);
   }
 
-  &:hover,
+  @media (min-width: $tablet-width) {
+    &:hover {
+      img {
+        opacity: 0.4;
+      }
+    }
+  }
+
   &:focus {
     img {
       opacity: 0.4;

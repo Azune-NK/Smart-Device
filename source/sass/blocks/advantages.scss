@@ -50,7 +50,22 @@
     @include font(16px, 22px);
   }
 
-  &:hover,
+  @media (min-width: $tablet-width) {
+    &:hover {
+      background-color: $blue;
+      border-color: $blue;
+
+      svg {
+        fill: $white;
+      }
+
+      h3,
+      p {
+        color: $white;
+      }
+    }
+  }
+
   &:focus {
     background-color: $blue;
     border-color: $blue;

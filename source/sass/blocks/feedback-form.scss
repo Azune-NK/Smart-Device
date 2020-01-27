@@ -38,11 +38,14 @@
   input,
   textarea {
     margin-bottom: 30px;
+
     color: $white;
 
     background-color: rgba($white, 0.1);
     border: 1px solid rgba($white, 0.1);
     outline: 0;
+
+    transition: $transition-duration $transition-type;
 
     @include font(16px, 22px);
 
@@ -52,7 +55,12 @@
       opacity: 1;
     }
 
-    &:hover,
+    @media (min-width: $tablet-width) {
+      &:hover {
+        border-color: rgba($white, 1);
+      }
+    }
+
     &:focus {
       border-color: rgba($white, 1);
     }
@@ -70,8 +78,8 @@
 
   textarea + button {
     margin-bottom: 34px;
+
     font-family: $roboto-condensed;
-    cursor: pointer;
     text-align: center;
     color: $white;
     text-transform: uppercase;
@@ -80,6 +88,7 @@
     background-color: transparent;
     border: 1px solid $white;
     border-radius: 5px;
+    cursor: pointer;
 
     @include font(14px, 16px, 700);
     @include hover;
@@ -133,7 +142,6 @@
 
 .feedback-form__close-btn {
   position: absolute;
-  cursor: pointer;
   top: 20px;
   right: 20px;
 
@@ -143,6 +151,9 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  @include hover;
 
   &::before,
   &::after {
@@ -162,6 +173,4 @@
   &::after {
     transform: rotate(-45deg);
   }
-
-  @include hover;
 }
