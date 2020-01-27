@@ -49,7 +49,7 @@ if (link && popup) {
       feedbackName.value = storage.feedbackName;
     }
 
-    if (phone) {
+    if (phone && storage.phone) {
       phone.value = storage.phone;
     }
 
