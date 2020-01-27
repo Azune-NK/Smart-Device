@@ -35,7 +35,7 @@
   top: 55px;
   left: -30px;
 
-  background-image: url("../../img/bg/bg-2005-desktop@1x.png");
+  background-image: url("../img/bg/bg-2005-desktop@1x.png");
   background-repeat: no-repeat;
 
   @include pseudo(220px, 317px);
@@ -47,7 +47,7 @@
 
 @include retina {
   .about-us::before {
-    background-image: url("../../img/bg/bg-2005-desktop@2x.png");
+    background-image: url("../img/bg/bg-2005-desktop@2x.png");
     background-size: 220px 317px;
   }
 }
@@ -85,12 +85,12 @@
     width: 244px;
     height: 362px;
 
-    background-image: url("../../img/bg/bg-2005-tablet@1x.png");
+    background-image: url("../img/bg/bg-2005-tablet@1x.png");
   }
 
   @include retina {
     .about-us::before {
-      background-image: url("../../img/bg/bg-2005-tablet@2x.png");
+      background-image: url("../img/bg/bg-2005-tablet@2x.png");
       background-size: 244px 362px;
     }
   }

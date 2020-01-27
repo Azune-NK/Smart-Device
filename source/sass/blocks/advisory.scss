@@ -2,8 +2,8 @@
   padding: 91px 0 113px;
 
   background-color: $blue;
-  background-image: url("../../img/bg/bg-paper-airplane-desktop@1x.png"),
-    url("../../img/bg/bg-triangles-form-desktop@1x.png");
+  background-image: url("../img/bg/bg-paper-airplane-desktop@1x.png"),
+    url("../img/bg/bg-triangles-form-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: 24.8% 42%, 100% 60%;
   background-size: 26.8%, auto;
@@ -11,8 +11,8 @@
 
 @include retina {
   .advisory {
-    background-image: url("../../img/bg/bg-paper-airplane-desktop@2x.png"),
-      url("../../img/bg/bg-triangles-form-desktop@2x.png");
+    background-image: url("../img/bg/bg-paper-airplane-desktop@2x.png"),
+      url("../img/bg/bg-triangles-form-desktop@2x.png");
     background-size: 26.5%, 1745px 765px;
   }
 }

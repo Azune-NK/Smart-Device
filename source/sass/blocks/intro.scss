@@ -1,8 +1,8 @@
 .intro {
   background-color: $almost-black;
-  background-image: url("../../img/bg/bg-circuit-desktop@1x.png"),
-    url("../../img/bg/bg-triangles-group-desktop@1x.png"),
-    url("../../img/bg/bg-intro-desktop@1x.png");
+  background-image: url("../img/bg/bg-circuit-desktop@1x.png"),
+    url("../img/bg/bg-triangles-group-desktop@1x.png"),
+    url("../img/bg/bg-intro-desktop@1x.png");
   background-repeat: no-repeat;
   background-position: calc(54.2% + 379px) 258px, 50% 50%, 0 0;
   background-size: auto, auto, cover;
@@ -10,9 +10,9 @@
 
 @include retina {
   .intro {
-    background-image: url("../../img/bg/bg-circuit-desktop@2x.png"),
-      url("../../img/bg/bg-triangles-group-desktop@2x.png"),
-      url("../../img/bg/bg-intro-desktop@2x.png");
+    background-image: url("../img/bg/bg-circuit-desktop@2x.png"),
+      url("../img/bg/bg-triangles-group-desktop@2x.png"),
+      url("../img/bg/bg-intro-desktop@2x.png");
     background-size: 705px 515px, cover, cover;
   }
 }
@@ -83,17 +83,17 @@
 
 @include not-desktop {
   .intro {
-    background-image: url("../../img/bg/bg-circuit-tablet@1x.png"),
-      url("../../img/bg/bg-triangles-group-tablet@1x.png"),
-      url("../../img/bg/bg-intro-tablet@1x.png");
+    background-image: url("../img/bg/bg-circuit-tablet@1x.png"),
+      url("../img/bg/bg-triangles-group-tablet@1x.png"),
+      url("../img/bg/bg-intro-tablet@1x.png");
     background-position: 100% 113px, 100% 0, 0 0;
   }
 
   @include retina {
     .intro {
-      background-image: url("../../img/bg/bg-circuit-tablet@2x.png"),
-        url("../../img/bg/bg-triangles-group-tablet@2x.png"),
-        url("../../img/bg/bg-intro-tablet@2x.png");
+      background-image: url("../img/bg/bg-circuit-tablet@2x.png"),
+        url("../img/bg/bg-triangles-group-tablet@2x.png"),
+        url("../img/bg/bg-intro-tablet@2x.png");
       background-size: 260px 340px, 770px 563px, cover;
     }
   }
@@ -137,17 +137,17 @@
 
 @include mobile-only {
   .intro {
-    background-image: url("../../img/bg/bg-circuit-mobile@1x.png"),
-      url("../../img/bg/bg-triangles-group-mobile@1x.png"),
-      url("../../img/bg/bg-intro-mobile@1x.png");
+    background-image: url("../img/bg/bg-circuit-mobile@1x.png"),
+      url("../img/bg/bg-triangles-group-mobile@1x.png"),
+      url("../img/bg/bg-intro-mobile@1x.png");
     background-position: 100% 92px, 100% 0, 0 0;
   }
 
   @include retina {
     .intro {
-      background-image: url("../../img/bg/bg-circuit-mobile@2x.png"),
-        url("../../img/bg/bg-triangles-group-mobile@2x.png"),
-        url("../../img/bg/bg-intro-mobile@2x.png");
+      background-image: url("../img/bg/bg-circuit-mobile@2x.png"),
+        url("../img/bg/bg-triangles-group-mobile@2x.png"),
+        url("../img/bg/bg-intro-mobile@2x.png");
       background-size: 294px 220px, 320px 529px, cover;
     }
   }
