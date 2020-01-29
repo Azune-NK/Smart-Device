@@ -66,10 +66,8 @@
 }
 
 .page-footer__menu-column {
-  width: 45%;
-
   &:first-child {
-    margin-right: 10%;
+    margin-right: 13%;
   }
 }
 
@@ -91,6 +89,16 @@
 }
 
 @media (max-width: 1600px) {
+  .page-footer__links {
+    margin-right: 4%;
+  }
+
+  .page-footer__menu-column {
+    &:first-child {
+      margin-right: 8%;
+    }
+  }
+
   .page-footer__contacts {
     width: 200px;
 
@@ -145,24 +153,25 @@
   }
 
   .page-footer__main-wrapper {
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .page-footer__links {
-    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-right: 0;
-    border-bottom: 1px solid rgba($bd-light-black, 0.2);
     padding: 0 3.13% 26px;
+
+    border-bottom: 1px solid rgba($bd-light-black, 0.2);
   }
 
   .page-footer__logo-link {
-    margin-bottom: 0;
     margin-right: 17px;
+    margin-bottom: 0;
   }
 
   .page-footer__links .page-footer__service-years {
@@ -189,8 +198,6 @@
   }
 
   .page-footer__menu-column {
-    width: auto;
-
     &:first-child {
       margin-right: 0;
     }
@@ -234,8 +241,8 @@
   }
 
   .page-footer__logo-link {
-    margin-bottom: 26px;
     margin-right: 0;
+    margin-bottom: 26px;
   }
 
   .page-footer__links .page-footer__service-years {
@@ -244,11 +251,11 @@
 
   .page-footer__menu,
   .page-footer__contacts {
-    width: 100%;
-    padding: 28px 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+    padding: 28px 5%;
   }
 
   .page-footer__menu-title,
@@ -264,6 +271,7 @@
 
   .page-footer__menu {
     margin-right: 0;
+
     border-bottom: 1px solid rgba($bd-light-black, 0.2);
   }
 
