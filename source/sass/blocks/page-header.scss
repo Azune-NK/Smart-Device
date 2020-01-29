@@ -30,12 +30,14 @@
 
 .page-header__contacts {
   display: flex;
+  flex-grow: 1;
 }
 
 .page-header__contacts-list {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
 
   @include ul-reset;
 }
@@ -44,7 +46,7 @@
   position: relative;
 
   &--mail {
-    margin-right: 88px;
+    margin-right: 9.3%;
     padding-left: 39px;
 
     .page-header__contacts-link::before {
@@ -79,7 +81,8 @@
 }
 
 .page-header__contacts-cb-btn {
-  margin-left: 50px;
+  max-width: 230px;
+  margin-left: 4.3%;
 
   @include hover;
 }
