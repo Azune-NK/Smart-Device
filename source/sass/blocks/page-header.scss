@@ -35,9 +35,10 @@
 
 .page-header__contacts-list {
   display: flex;
-  align-items: center;
   flex-grow: 1;
+  flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: center;
 
   @include ul-reset;
 }
@@ -46,7 +47,6 @@
   position: relative;
 
   &--mail {
-    margin-right: 9.3%;
     padding-left: 39px;
 
     .page-header__contacts-link::before {
@@ -60,6 +60,7 @@
   }
 
   &--phone {
+    margin-left: 9.3%;
     padding-left: 34px;
 
     .page-header__contacts-link::before {
@@ -70,6 +71,11 @@
 
       @include pseudo(18px, 18px);
     }
+  }
+
+  &:nth-child(3n),
+  &:nth-child(4n) {
+    margin-left: 40px;
   }
 }
 
@@ -102,7 +108,6 @@
 
   .page-header__contacts-item {
     &--mail {
-      margin-right: 33px;
       padding-left: 25px;
 
       .page-header__contacts-link::before {
@@ -116,6 +121,7 @@
     }
 
     &--phone {
+      margin-left: 33px;
       padding-left: 24px;
 
       .page-header__contacts-link::before {
@@ -124,6 +130,11 @@
 
         background-size: cover;
       }
+    }
+
+    &:nth-child(3n),
+    &:nth-child(4n) {
+      margin-left: 33px;
     }
   }
 
@@ -146,8 +157,13 @@
   }
 
   .page-header__contacts-item {
-    &--mail {
-      margin-right: 25px;
+    &--phone {
+      margin-left: 25px;
+    }
+
+    &:nth-child(3n),
+    &:nth-child(4n) {
+      margin-left: 25px;
     }
   }
 
