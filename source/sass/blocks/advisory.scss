@@ -253,6 +253,12 @@
     padding-top: 2px;
     padding-left: 2px;
   }
+
+  input[type="text"],
+  input[type="phone"],
+  textarea {
+    -webkit-appearance: none;
+  }
 }
 
 @include desktop {
