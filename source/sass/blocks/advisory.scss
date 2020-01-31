@@ -246,18 +246,18 @@
     textarea {
       height: 104px;
     }
+
+    input[type="text"],
+    input[type="tel"],
+    textarea {
+      appearance: none;
+    }
   }
 
   .advisory-form__agreement {
     width: 100%;
     padding-top: 2px;
     padding-left: 2px;
-  }
-
-  input[type="text"],
-  input[type="tel"],
-  textarea {
-    appearance: none;
   }
 }
 
