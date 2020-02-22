@@ -112,6 +112,7 @@
     background-color: transparent;
     border: 1px solid $white;
     border-radius: 5px;
+    cursor: pointer;
 
     @include font(14px, 16px, 700);
     @include hover;
